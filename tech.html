@@ -4,41 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>UpToDate</title>
+    <link rel="icon" type="image/x-icon" href="./images/Favicon.png">
 </head>
 <body>
-    <section>
-        <header>
-            <h1>
-                <a href="/">Up To Date</a>
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./tech.html">Tech</a>
-                    </li>
-                    <li>
-                        <a href="./politics.html">Politics</a>
-                    </li>
-                    <li>
-                        <a href="./sports.html">Sports</a>
-                    </li>
-                    <li>
-                        <a href="./finance.html">Finance</a>
-                    </li>
-                    <li>
-                        <a href="./science.html">Science</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </section>
-    <section>
-        <div></div>
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-    </section>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="./images/favicon1.jpg" class="img-responsive" alt="logo">
+    <a class="navbar-brand" href="index.html">UpToDate</a>
+    <button class ="btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <form id="search-bar" class="form-inline my-2 my-lg-0">
+          <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> 
+      </ul>
+      <ul class="navbar-nav my-2 my-lg-0">
+          <li class="nav-item active">
+              <a class="nav-link" href="./finance.html">Finance</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./politics.html" >Politics</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./science.html">Science</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./sports.html">Sports</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./tech.html">Technology</a>
+            </li>
+      </ul>
+    </div>
+  </nav>
+    <section class="container border-bottom border-dark h-25 p-5">
+      <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+              <h2 class="border-top border-bottom border-dark p-2 text-center">Trending</h2>
+          </div>
+          <div class="col-12 col-md-10 row embed-responsive embed-responsive-4by3">
+            <iframe id="trending-tech" class="embed-responsive-item" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+      </div>
+  </section>
+  <!--Current Events Section-->
+  <section class="container border-bottom border-dark h-25 p-5">
+      <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+              <h2 class="border-top border-dark border-bottom p-3 text-center">Current Events</h2>
+          </div>
+          <div class="col-12 col-md-5">
+            <iframe id="article1Tech" src="" scrolling="no" frameborder="0" allowtransparency="true" title="" style="border:none;max-width:500px;min-width:300px;min-height:550px;display:block;width:100%;"></iframe>
+          </div>
+          <div class="col-12 col-md-5">
+              <iframe id="article2Tech" src="" scrolling="no" frameborder="0" allowtransparency="true" title="" style="border:none;max-width:500px;min-width:300px;min-height:550px;display:block;width:100%;"></iframe>
+          </div>
+      </div>
+  </section>
+
+
+  <!-- jquery links -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"               
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="               
+        crossorigin="anonymous">
+    </script>
+    <script               
+        src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"               
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="               
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
